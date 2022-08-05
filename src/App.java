@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)  {
 
         System.out.println("(============ Tax Calculator ============)\n");
 
@@ -25,12 +25,12 @@ public class App {
             if (yearlyIncome < slab1) {
 
                 int additionalTax = 0;
-                Double taxPercent = 2.5;
+                double taxPercent = 2.5;
                 int exceededAmount = yearlyIncome - minIncome;
 
-                Double yearlyTax = (exceededAmount * taxPercent) / 100;
+                double yearlyTax = (exceededAmount * taxPercent) / 100;
                 yearlyTax = yearlyTax + additionalTax;
-                Double monthlyTax = yearlyTax / 12;
+                double monthlyTax = yearlyTax / 12;
 
                 System.out.println("Yearly Tax: " + yearlyTax);
                 System.out.println("\nMonthly Tax: " + monthlyTax);
@@ -38,12 +38,12 @@ public class App {
             } else if (yearlyIncome < slab2) {
 
                 int additionalTax = 15000;
-                Double taxPercent = 12.5;
+                double taxPercent = 12.5;
                 int exceededAmount = yearlyIncome - slab1;
 
-                Double yearlyTax = (exceededAmount * taxPercent) / 100;
+                double yearlyTax = (exceededAmount * taxPercent) / 100;
                 yearlyTax = yearlyTax + additionalTax;
-                Double monthlyTax = yearlyTax / 12;
+                double monthlyTax = yearlyTax / 12;
 
                 System.out.println("Yearly Tax: " + yearlyTax);
                 System.out.println("\nMonthly Tax: " + monthlyTax);
@@ -77,12 +77,12 @@ public class App {
             } else if (yearlyIncome < slab5) {
 
                 int additionalTax = 1005000;
-                Double taxPercent = 32.5;
+                double taxPercent = 32.5;
                 int exceededAmount = yearlyIncome - slab4;
 
-                Double yearlyTax = (exceededAmount * taxPercent) / 100;
+                double yearlyTax = (exceededAmount * taxPercent) / 100;
                 yearlyTax = yearlyTax + additionalTax;
-                Double monthlyTax = yearlyTax / 12;
+                double monthlyTax = yearlyTax / 12;
 
                 System.out.println("Yearly Tax: " + yearlyTax);
                 System.out.println("\nMonthly Tax: " + monthlyTax);
